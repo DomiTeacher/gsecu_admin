@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>보안포털 어드민</title>
+<link rel="stylesheet" href="../css/lib.css">
+<link rel="stylesheet" href="../css/gsecu_admin.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/gsecu_admin.js"></script>
+</head>
+<body>
+
+
+<!-- +++++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++++++ -->
+<div id="header">
+	<h1 class="logo"><a href="#"><img src="../images/logo-gabia.png" alt="gabia." /></a> 가비아 보안관제센터 ADMIN</h1>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //header +++++++++++++++++++++++++++++++++++ -->
+
+
+<!-- +++++++++++++++++++++++++++++++ GNB +++++++++++++++++++++++++++++++++++ -->
+<div id="gnb">
+	<div class="gnb_top">
+		<div class="wrap Relative">
+
+			<ul class="gnb_menu">
+				<li>
+					<a href="#">보안 정책 관리</a>
+					<ul class="sub1">
+						<li class="on"><a href="#">단독형 방화벽</a></li>
+					</ul>
+				</li>
+				<li class="on">
+					<a href="#">회원 관리</a>
+					<ul class="sub2">
+						<li class="on"><a href="#">회원 정보 조회</a></li>
+						<li><a href="#">로그 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">장비 관리</a>
+					<ul class="sub3">
+						<li><a href="#">보안 장비 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">설정</a>
+					<ul class="sub4">
+						<li><a href="#">항목 관리</a></li>
+						<li><a href="#">ADMIN 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="login_out">
+				<ul>
+					<li class="name">%ADMIN% %직원명% 님</li>
+					<li><a class="button" href="#">로그아웃</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //GNB +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++ 본문 +++++++++++++++++++++++++++++++++++ -->
+<div class="wrap">
+	
+	<!-- line map -->
+	<div class="line_map">
+		<ol>
+			<li><a class="home" title="home" href="/"></a></li>
+			<li><a href="#">회원 관리</a></li>
+			<li><a href="#">회원 정보 조회</a></li>
+		</ol>
+	</div>
+	<!-- //line map -->
+	
+	<!-- 본문 타이틀 -->
+	<h2 class="tle_01 Mt0">회원 목록</h2>
+
+	<!-- 검색 box -->
+	<div class="box_contents_01">
+		<table>
+		<tr>
+			<th><p>검색어</p></th>
+			<td>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label>
+				<label><input type="text" title="입력하세요." style="width:220px;" /></label>
+				<span class="btn_a2 v2"><button type="button">검색</button></span>
+			</td>
+		</tr>
+		<tr>
+			<th><p>가입경로</p></th>
+			<td>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label> &nbsp; &nbsp; &nbsp;
+				<strong>위탁&nbsp;</strong>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label> &nbsp; &nbsp; &nbsp;
+				<strong>보안장비&nbsp;</strong>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label> &nbsp; &nbsp; &nbsp;
+				<strong>보안솔루션&nbsp;</strong>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label> &nbsp; &nbsp; &nbsp;
+				<strong>가입상태&nbsp;</strong>
+				<label><select title="선택">
+					<option>&nbsp;전체&nbsp;</option>
+				</select></label> &nbsp; &nbsp; &nbsp;
+			</td>
+		</tr>
+		<tr>
+			<th><p>기간</p></th>
+			<td>
+				<label><select title="선택">
+					<option>&nbsp;요청일&nbsp;</option>
+				</select></label>
+				<label><input type="text" class="C" title="입력하세요." style="width:100px;" /></label>
+				<input type="image" src="../images/icon-calendar.png" alt="달력" class="T Mt-1" />
+				&nbsp;~&nbsp;
+				<label><input type="text" class="C" title="입력하세요." style="width:100px;" /></label>
+				<input type="image" src="../images/icon-calendar.png" alt="달력" class="T Mt-1" /> &nbsp; &nbsp;
+				<span class="btn_a1"><button type="button">당일</button></span>
+				<span class="btn_a1"><button type="button">3일</button></span>
+				<span class="btn_a1"><button type="button">1주일</button></span>
+				<span class="btn_a1"><button type="button">1개월</button></span>
+				<span class="btn_a1"><button type="button">당월</button></span>
+				<span class="btn_a1"><button type="button">3개월</button></span> &nbsp;
+				<span class="btn_a1 v2 excel"><button type="button"><b></b>엑셀 다운로드</button></span>
+			</td>
+		</tr>
+		</table>
+	</div>
+	<!-- //검색 box -->
+	
+	<!-- -->
+	<div class="Clearfix">
+		<p class="Fl txt_101">
+			총 <span class="org_01">20,000</span>건이 검색되었습니다.
+		</p>
+		<p class="Fr Pt20">
+			<span class="btn_b1 reg"><button type="button"><b></b>회원 등록</button></span>
+		</p>
+	</div>
+
+	<!-- table_01 형 -->
+	<table class="table_01">
+		<caption>table_01 형 - col table</caption>
+		<thead>
+		<tr>
+			<th>ID</th>
+			<th>업체명</th>
+			<th>가입경로</th>
+			<th>상위계정</th>
+			<th>위탁여부</th>
+			<th>서비스종류</th>
+			<th>IDC</th>
+			<th>제품명</th>
+			<th>IP</th>
+			<th>HA</th>
+			<th>단독/공유</th>
+			<th>구성도</th>
+			<th>상태</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td rowspan="5"><a href="#">jasonchoi100</a></td>
+			<td rowspan="5"><a href="#">사이버로지텍</a></td>
+			<td rowspan="5">가비아</td>
+			<td rowspan="5">%상위계정ID%</td>
+			<td rowspan="5">위탁여부</td>
+			<td>FW</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td>HA</td>
+			<td class="brr">단독</td>
+			<td rowspan="5">
+				<a href="#">파일1</a><br>
+				<a href="#">파일2</a><br>
+			</td>
+			<td rowspan="5">정상</td>
+		</tr>
+		<tr>
+			<td>WAF</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td>HA</td>
+			<td class="brr">공유</td>
+		</tr>
+		<tr>
+			<td>IPS</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">단독</td>
+		</tr>
+		<tr>
+			<td>웹쉘</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">단독</td>
+		</tr>
+		<tr>
+			<td>바이러스백신</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">공유</td>
+		</tr>
+		</tbody>
+
+		<tbody>
+		<tr>
+			<td rowspan="5"><a href="#">jasonchoi100</a></td>
+			<td rowspan="5"><a href="#">사이버로지텍</a></td>
+			<td rowspan="5">가비아</td>
+			<td rowspan="5">%상위계정ID%</td>
+			<td rowspan="5">위탁여부</td>
+			<td>FW</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td>HA</td>
+			<td class="brr">단독</td>
+			<td rowspan="5">
+				<a href="#">파일1</a><br>
+				<a href="#">파일2</a><br>
+			</td>
+			<td rowspan="5">정상</td>
+		</tr>
+		<tr>
+			<td>WAF</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td>HA</td>
+			<td class="brr">공유</td>
+		</tr>
+		<tr>
+			<td>IPS</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">단독</td>
+		</tr>
+		<tr>
+			<td>웹쉘</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">단독</td>
+		</tr>
+		<tr>
+			<td>바이러스백신</td>
+			<td>서초KIDC</td>
+			<td>MF2-100</td>
+			<td><a href="#">121.254.177.123</a></td>
+			<td></td>
+			<td class="brr">공유</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<div class="Relative">
+		<p class="btn_right Pt10">
+			<span class="btn_b1 reg"><button type="button"><b></b>회원 등록</button></span>
+		</p>
+	</div>
+
+	<div class="Pt25 C">
+	<!-- paging -->
+		<a class="img" href="#"><img src="../images/paging_ll.gif" alt="처음" class="M" /></a>
+		<a class="img" href="#"><img src="../images/paging_l.gif" alt="이전" class="M" /></a>
+		<span class="paging">
+			<a href="#">11</a><a class="now" href="#">12</a><a href="#">13</a><a class="on" href="#">14</a><a href="#">15</a><a href="#">16</a><a href="#">17</a><a href="#">18</a><a href="#">19</a><a href="#">20</a>
+		</span>
+		<a class="img" href="#"><img src="../images/paging_r.gif" alt="다음" class="M" /></a>
+		<a class="img" href="#"><img src="../images/paging_rr.gif" alt="끝" class="M" /></a>
+	<!-- //paging -->
+	</div>
+
+</div>
+<!-- +++++++++++++++++++++++++++++++ //본문 +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++ footer +++++++++++++++++++++++++++++++++++ -->
+<div id="footer">
+	<div class="contents">
+		(주)가비아 | 대표이사:김홍국 | 전화번호 02-2039-5337<br>
+		사업자등록번호 : 214-86-39239 | 통신판매업 신고번호 : 제2012-경기성남-1188호 경기도 성남시 분당구 대왕판교로 660(삼평동) 유스페이스1 B동 4층<br>
+		ⓒ Gabia Inc. All Rights Reserved.
+	</div>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //footer +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+</body>
+</html>

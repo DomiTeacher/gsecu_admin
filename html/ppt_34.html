@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>보안포털 어드민</title>
+<link rel="stylesheet" href="../css/lib.css">
+<link rel="stylesheet" href="../css/gsecu_admin.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/gsecu_admin.js"></script>
+</head>
+<body>
+
+
+<!-- +++++++++++++++++++++++++++++++ header +++++++++++++++++++++++++++++++++++ -->
+<div id="header">
+	<h1 class="logo"><a href="#"><img src="../images/logo-gabia.png" alt="gabia." /></a> 가비아 보안관제센터 ADMIN</h1>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //header +++++++++++++++++++++++++++++++++++ -->
+
+
+<!-- +++++++++++++++++++++++++++++++ GNB +++++++++++++++++++++++++++++++++++ -->
+<div id="gnb">
+	<div class="gnb_top">
+		<div class="wrap Relative">
+
+			<ul class="gnb_menu">
+				<li>
+					<a href="#">보안 정책 관리</a>
+					<ul class="sub1">
+						<li class="on"><a href="#">단독형 방화벽</a></li>
+					</ul>
+				</li>
+				<li class="on">
+					<a href="#">회원 관리</a>
+					<ul class="sub2">
+						<li class="on"><a href="#">회원 정보 조회</a></li>
+						<li><a href="#">로그 조회</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">장비 관리</a>
+					<ul class="sub3">
+						<li><a href="#">보안 장비 관리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">설정</a>
+					<ul class="sub4">
+						<li><a href="#">항목 관리</a></li>
+						<li><a href="#">ADMIN 관리</a></li>
+					</ul>
+				</li>
+			</ul>
+			
+			<div class="login_out">
+				<ul>
+					<li class="name">%ADMIN% %직원명% 님</li>
+					<li><a class="button" href="#">로그아웃</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //GNB +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++ 본문 +++++++++++++++++++++++++++++++++++ -->
+<div class="wrap">
+	
+	<!-- line map -->
+	<div class="line_map">
+		<ol>
+			<li><a class="home" title="home" href="/"></a></li>
+			<li><a href="#">회원 관리</a></li>
+			<li><a href="#">회원 정보 조회</a></li>
+			<li><a href="#">회원 정보 조회</a></li>
+		</ol>
+	</div>
+	<!-- //line map -->
+	
+	<!-- 본문 타이틀 -->
+	<h2 class="tle_01 Mt0">회원 정보 조회</h2>
+	
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">기본 정보</h3>
+
+	<!-- table_02 형 -->
+	<table class="table_02">
+		<caption>table_02 형 - row table</caption>
+		<colgroup><col style="width:180px;"><col><col style="width:180px;"><col></colgroup>
+		<tbody>
+		<tr>
+			<th><p>ID</p></th>
+			<td>
+				gsecu-%입력값%
+			</td>
+            <th><p>P/W</p></th>
+			<td>
+				<span class="btn_a2"><button type="button">임시비밀번호 발급</button></span>
+			</td>
+		</tr>
+		<tr>
+			<th><p>업체명(이름)</p></th>
+			<td>
+				%입력값%
+			</td>
+            <th><p>등록일</p></th>
+			<td>
+				%YYYY-MM-DD hh:mm:ss%
+			</td>
+		</tr>
+		<tr>
+			<th><p>가입경로</p></th>
+			<td>
+				%선택값%
+			</td>
+            <th><p>최종 수정일</p></th>
+			<td>
+				%YYYY-MM-DD hh:mm:ss%
+			</td>
+		</tr>
+		<tr>
+			<th><p>영업자</p></th>
+			<td>
+				%선택값%
+			</td>
+            <th><p>가입상태</p></th>
+			<td>
+				%정상% or %중지% or %탈퇴%
+
+			</td>
+		</tr>
+		<tr>
+			<th><p>위탁 여부</p></th>
+			<td colspan="3">
+				%N% or %Y%
+			</td>
+		</tr>
+		<tr>
+			<th><p>상위 계정</p></th>
+			<td colspan="3">
+				%ID% %(업체명)% 표시
+			</td>
+		</tr>
+		<tr>
+			<th><p>메모</p></th>
+			<td colspan="3">
+				%입력값%
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">관리자 정보</h3>
+
+	<!-- table_01 형 -->
+	<table class="table_01 Fix">
+		<caption>table_01 형 - col table</caption>
+		<colgroup><col style="width:110px;"><col style="width:100px;"><col style="width:130px;"><col style="width:130px;"><col style="width:180px;"><col style="width:140px;"><col></colgroup>
+		<thead>
+		<tr>
+			<th>관리자 이름</th>
+			<th>직급</th>
+			<th>휴대전화</th>
+			<th>회사전화</th>
+			<th>이메일</th>
+			<th>알림 설정</th>
+			<th>메모</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>%입력값%</td>
+			<td>%입력값%</td>
+			<td>%입력값%</td>
+			<td>%입력값%</td>
+			<td>%입력값%</td>
+			<td>%선택값% %선택값%</td>
+			<td>%입력값%</td>
+		</tr>
+		</tbody>
+	</table>
+
+	
+
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">보안 장비</h3>
+
+	
+
+	<!-- table_01 형 -->
+	<table class="table_01 Fix">
+		<caption>table_01 형 - col table</caption>
+		<colgroup><col><col><col><col><col><col><col><col><col style="width:130px;"><col></colgroup>
+		<thead>
+		<tr>
+			<th>서비스 종류</th>
+			<th colspan="2">제품명</th>
+			<th>별칭</th>
+			<th colspan="2">IP</th>
+			<th>IDC</th>
+			<th>랙 위치</th>
+			<th>출고/설치일</th>
+			<th>단독/공유</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>FW</td>
+			<td colspan="2">MF2-300</td>
+			<td>화벽화벽</td>
+			<td colspan="2">
+				<a href="#">121.254.177.123</a>
+			</td>
+			<td>
+				서초IDC
+			</td>
+			<td>
+				-
+			</td>
+			<td>
+				%출고설치일%
+			</td>
+			<td>단독</td>
+			
+		</tr>
+		<tr>
+			<th>%옵션명1%</th>
+			<th>%옵션명2%</th>
+			<th>%옵션명3%</th>
+			<th>%옵션명4%</th>
+			<th>%옵션명5%</th>
+			<th>%옵션명6%</th>
+			<th>%옵션명7%</th>
+			<th>%옵션명8%</th>
+			<th>%옵션명9%</th>
+			<th class="Brx">%옵션명10%</th>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+			<td>-</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">보안 솔루션</h3>
+
+	
+
+	<!-- table_01 형 -->
+	<table class="table_01 Fix">
+		<caption>table_01 형 - col table</caption>
+		<colgroup><col style="width:15%;"><col style="width:15%;"><col style="width:160px;"><col></colgroup>
+		<thead>
+		<tr>
+			<th>서비스 종류</th>
+			<th>제품명</th>
+			<th>서버 IP</th>
+			<th>메모</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>S/W 웹방화벽</td>
+			<td>Metieye</td>
+			<td>
+				<a href="#">121.254.177.123</a>
+			</td>
+			<td>
+				정책 엄격하게 할것
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">네트워크 구성도</h3>
+	<ul class="Pl15">
+		<li class="Pt4 Pb4">
+			파일첨부1 &nbsp; <a href="#">ABC_infra_1.pdf</a>
+		</li>
+		<li class="Pt4 Pb4">
+			파일첨부2 &nbsp; <a href="#">ABC_infra_2.pdf</a>
+		</li>
+	</ul>
+
+	<!-- 서브 타이틀 -->
+	<h3 class="tle_03">메모/작업이력</h3>
+
+	
+
+	<!-- table_01 형 -->
+	<table class="table_01 Fix">
+		<caption>table_01 형 - col table</caption>
+		<colgroup><col style="width:180px;"><col style="width:160px;"><col></colgroup>
+		<thead>
+		<tr>
+			<th>작성일</th>
+			<th>작성자</th>
+			<th>메모</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>2015-03-11 21:15</td>
+			<td>전득상</td>
+			<td><p class="Pl20  Fl">임시 비밀번호 발급</p></td>
+		</tr>
+        <tr>
+			<td>2015-03-11 21:15</td>
+			<td>전득상</td>
+			<td><p class="Pl20 Fl"><s>임꺽정 부장이 임시 비밀번호 발급해달라고 요청함</S></p><p class="Pr20 Fr">삭제 처리 2015-02-03 16:23 </p></td>
+		</tr>
+        <tr>
+			<td>2015-03-11 21:15</td>
+			<td>전득상</td>
+			<td><p class="Pl20 Fl">임시 비밀번호 발급</p></td>
+		</tr>
+		</tbody>
+	</table>
+    
+    <div class="Pl15">
+		<div class="Pt10 Pb4">
+			메모 &nbsp; 
+			<label><input type="text" style="width:600px;" title="입력하세요."></label>
+			<span class="btn_a1"><button type="button">&nbsp;등록&nbsp;</button></span>
+		</div>
+	</div>
+	
+	<!-- button C 타입형 -->
+	<div class="Pt40 C">
+		<span class="btn_c1"><button type="button">수정</button></span>&nbsp;
+		<span class="btn_c2"><button type="button">닫기</button></span>
+	</div>
+
+</div>
+<!-- +++++++++++++++++++++++++++++++ //본문 +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+<!-- +++++++++++++++++++++++++++++++ footer +++++++++++++++++++++++++++++++++++ -->
+<div id="footer">
+	<div class="contents">
+		(주)가비아 | 대표이사:김홍국 | 전화번호 02-2039-5337<br>
+		사업자등록번호 : 214-86-39239 | 통신판매업 신고번호 : 제2012-경기성남-1188호 경기도 성남시 분당구 대왕판교로 660(삼평동) 유스페이스1 B동 4층<br>
+		ⓒ Gabia Inc. All Rights Reserved.
+	</div>
+</div>
+<!-- +++++++++++++++++++++++++++++++ //footer +++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+</body>
+</html>

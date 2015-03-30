@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>보안포털 어드민</title>
+<link rel="stylesheet" href="../css/lib.css">
+<link rel="stylesheet" href="../css/gsecu_admin.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/gsecu_admin.js"></script>
+</head>
+<body style="margin:10px;">
+
+
+
+
+
+<table id="hoverSelectTable" class="table_01">
+<col style="width:15%;" /><col style="width:15%;" /><col style="width:15%;" /><col style="width:10%;" /><col /><col style="width:20%;" />
+<thead>
+<tr>
+     <th rowspan="2">1Depth</th>
+     <th>2Depth</th>
+     <th>3Depth</th>
+     <th>Directory</th>
+     <th>Page</th>
+     <th>비고</th>
+</tr>
+<tr>
+     <th>2Depth</th>
+     <th>3Depth</th>
+     <th>Directory</th>
+     <th>Page</th>
+     <th>비고</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+     <td rowspan="3">페이지 기본 샘플</td>
+     <td></td>
+     <td></td>
+     <td class="org_01">layout</td>
+     <td><a href="layout/html_basic.html">html_basic.html</a></td>
+     <td rowspan="3"></td>
+</tr>
+<tr>
+     <td></td>
+     <td></td>
+     <td class="org_01"></td>
+     <td><a href="layout/tab_menu.html">tab_menu.html</a></td>
+</tr>
+<tr>
+     <td></td>
+     <td rowspan="3"></td>
+     <td class="org_01"></td>
+     <td><a href="layout/paging.html">paging.html</a></td>
+</tr>
+<tr>
+     <td>CSS 버튼</td>
+     <td></td>
+     <td class="org_01"></td>
+     <td><a href="layout/css_btn.html">css_btn.html</a></td>
+     <td></td>
+</tr>
+<tr class="category">
+     <td>레이어팝업</td>
+     <td></td>
+     <td class="org_01"></td>
+     <td><a href="layout/layer_popup.html">layer_popup.html</a></td>
+     <td></td>
+</tr>
+<tr>
+     <td></td>
+     <td>스크롤 컨텐츠 있을시,</td>
+     <td></td>
+     <td class="org_01"></td>
+     <td><a href="layout/layer_popup_scroll.html">layer_popup_scroll.html</a></td>
+     <td></td>
+</tr>
+</tbody>
+</table>
+
+
+<br><br><br><br>
+
+
+<div style="width:200px; height:300px; overflow:auto; border:1px #999 solid;">
+	<ul id="treeMenu_test" class="tree_menu">
+		<li>
+			 <a href="#">+ 메뉴1</a>
+			 <ul>
+				<li><a href="#">메뉴1a</a></li>
+				<li><a href="#">메뉴1b</a></li>
+				<li>
+					<a href="#">+ 메뉴1c</a>
+					<ul>
+						<li><a href="#">Wapples-1000000000</a></li>
+						<li><a href="#">메뉴1c나</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			 <a href="#">+ 메뉴2</a>
+			 <ul>
+				<li><a href="#">메뉴2a</a></li>
+				<li><a href="#">메뉴2b</a></li>
+				<li>
+					<a href="#">+ 메뉴2c</a>
+					<ul>
+						<li><a href="#">메뉴2c가</a></li>
+						<li><a href="#">메뉴2c나</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<script>
+$(function() {
+	TreeMenu($('#treeMenu_test'));
+});
+</script>
+
+
+
+<br><br><br><br>
+
+
+
+<button type="button" style="border:1px #bbb solid; background:#f8f8f8; padding:10px;" onclick="showModalBg(); showCenterLayer('#layerSmall1')">센터 레이어창 띄우기</button><br>
+<div id="layerSmall1" class="layer_popup" style="display:none; max-width:90%;">
+     내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 내용2 <br>
+     내용2 내용2 내용2 <br>
+     내용2 내용2 내용2 <br>
+     내용2 내용2 내용2 <br>
+     내용2<br>
+     내용2<br>
+     <div class="C Pt20">
+          <button type="button" style="padding:5px; border:1px #ccc solid;">확인</button>
+          <button type="button" onclick="hideModalBg(); hideCenterLayer('#layerSmall1')" style="padding:5px; border:1px #ccc solid;">X 닫기</button>
+     </div>
+</div>
+
+
+
+<br><br><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+<span class="icon_i" rel='ddd'></span><span id="ddd" class="tooltip_position" style="display:none;">
+     <span class="layer_tooltip">
+          <span class="inner">
+               터치 파노라마는 모바일에서만 사용할 수 있습니다.0<br>
+               홈페이지에서는 동작하지 않습니다.0<br>
+          </span>
+     </span>
+</span>
+
+
+<br><br><br><br><br><br><br>
+
+
+
+</body>
+</html>

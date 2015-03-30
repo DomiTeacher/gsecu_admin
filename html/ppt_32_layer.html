@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>보안포털 어드민</title>
+<link rel="stylesheet" href="../css/lib.css">
+<link rel="stylesheet" href="../css/gsecu_admin.css">
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/gsecu_admin.js"></script>
+</head>
+<body style="margin:10px;">
+
+
+
+
+
+
+
+
+
+
+<!-- layer popup -->
+<div class="layer_popup">
+	<div class="contents">
+		<h2 class="tle_02">보안 솔루션 선택</h2>
+
+		<div class="left">
+        	<div style="width:200px; height:300px; overflow:auto; border:1px #999 solid;">
+                <ul class="tree_menu" id="treeMenu_test">
+                    <li>
+                         <a href="#">+ 메뉴1</a>
+                         <ul>
+                            <li><a href="#">메뉴1a</a></li>
+                            <li><a href="#">메뉴1b</a></li>
+                            <li>
+                                <a href="#">+ 메뉴1c</a>
+                                <ul>
+                                    <li><a href="#">Wapples-1000000000</a></li>
+                                    <li><a href="#">메뉴1c나</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                         <a href="#">+ 메뉴2</a>
+                         <ul>
+                            <li><a href="#">메뉴2a</a></li>
+                            <li><a href="#">메뉴2b</a></li>
+                            <li>
+                                <a href="#">+ 메뉴2c</a>
+                                <ul>
+                                    <li><a href="#">메뉴2c가</a></li>
+                                    <li><a href="#">메뉴2c나</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="center">
+        
+        </div>
+        
+        <div class="right">
+        
+        </div>
+
+		<!-- table_01 형 layerType -->
+		<table class="table_01 layerType Mt12">
+			<caption>table_01 형 - col table</caption>
+			<thead>
+			<tr>
+				<th>관리자 이름</th>
+				<th>직급</th>
+				<th>휴대전화</th>
+				<th>회사전화</th>
+				<th>이메일</th>
+				<th>알림 설정</th>
+				<th>메모</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>오수진</td>
+				<td>차장</td>
+				<td>010-0000-0000</td>
+				<td>010-0000-0000</td>
+				<td>xcvxcvxccv@gabia.com</td>
+				<td>%문자%, %메일%</td>
+				<td>메모메모메모</td>
+			</tr>
+			<tr>
+				<td>오수진</td>
+				<td>차장</td>
+				<td>010-0000-0000</td>
+				<td>010-0000-0000</td>
+				<td>xcvxcvxccv@gabia.com</td>
+				<td>%문자%, %메일%</td>
+				<td>메모메모메모</td>
+			</tr>
+			<tr>
+				<td>오수진</td>
+				<td>차장</td>
+				<td>010-0000-0000</td>
+				<td>010-0000-0000</td>
+				<td>xcvxcvxccv@gabia.com</td>
+				<td>%문자%, %메일%</td>
+				<td>메모메모메모</td>
+			</tr>
+			<tr>
+				<td>오수진</td>
+				<td>차장</td>
+				<td>010-0000-0000</td>
+				<td>010-0000-0000</td>
+				<td>xcvxcvxccv@gabia.com</td>
+				<td>%문자%, %메일%</td>
+				<td>메모메모메모</td>
+			</tr>
+			<tr>
+				<td>오수진</td>
+				<td>차장</td>
+				<td>010-0000-0000</td>
+				<td>010-0000-0000</td>
+				<td>xcvxcvxccv@gabia.com</td>
+				<td>%문자%, %메일%</td>
+				<td>메모메모메모</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<a class="close" href="javascript:void(0)">레이어 닫기</a>
+</div>
+<!-- //layer popup -->
+
+<script>
+$(function() {
+	TreeMenu($('#treeMenu_test'));
+});
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
